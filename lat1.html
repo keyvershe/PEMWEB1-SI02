@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+</head>
+<body>
+    <h1 id="">BIODATA</h1>
+
+        <p id="nama">Mees Hilgers</p>
+        <p id="prodi">Kedokteran</p>
+        <p id="nim">0110125018</p>
+
+    <img id="fotoku" src="https://static.promediateknologi.id/crop/0x57:736x841/750x500/webp/photo/p1/767/2024/12/05/Mees-Hilgers-3739266645.jpeg" width="200"><br>
+      <button onclick="ubahnama()">ubah nama </button>
+      <button onclick="ubahprodi()">ubah prodi</button>
+      <button onclick="gantifoto()">ganti foto</button>
+      <button onclick="sembunyikanbiodata()">sembunyikan biodata</button>
+      <button onclick="tampilkanbiodata()">tampilkan biodata</button>
+
+
+<script>
+    function ubahnama(){
+        document.getElementById("nama").innerHTML="<b>Keysha W Nurafitha</b>";
+    }
+    function ubahprodi(){
+        document.getElementById("prodi").innerHTML="Sistem Informasi";
+    }
+    function gantifoto(){
+        document.getElementById("fotoku").src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/179/2024/11/04/F-MESS-ok-2368919175.jpg";
+    }
+    function sembunyikanbiodata(){
+        document.getElementById("nama").style.display="none";
+        document.getElementById("prodi").style.display="none";
+        document.getElementById("NIM").style.display="none";
+         document.getElementById("fotosaya").style.display="none";
+    }
+    function tampilkanbiodata(){
+        document.getElementById("nama").style.display="block";
+        document.getElementById("prodi").style.display="block";
+       document.getElementById("NIM").style.display="block";
+       document.getElementById("fotosaya").style.display="block";
+    }
+</script>
+</body>
+</html>

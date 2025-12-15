@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="reaksi" style="width: 300ox; height: 100px; background-color: antiquewhite;">NGODING ITU MENYENANGKAN</div>
+
+    <button onclick="liatreaksi()">muculkan notif</button>
+
+    <script>
+        function liatreaksi(){
+            $("#reaksi")
+                  .css("background-color","red")
+                  .slideDown(500)
+                  .slideUp(500)
+                  .slideIN(500)
+                  .slideOut(500)
+
+        }
+    </script>
+
+    
+</body>
+</html>

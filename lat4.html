@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="slider">
+  <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/179/2024/11/04/F-MESS-ok-2368919175.jpg" width="200"> 
+  <img src="https://imgcdn.espos.id/@espos/images/2024/09/Mees-Hilgers-1.jpg" width="200">
+  <img src="https://static.promediateknologi.id/crop/0x57:736x841/750x500/webp/photo/p1/767/2024/12/05/Mees-Hilgers-3739266645.jpeg" width="150"> 
+</div>
+<button id="prev">prev</button> 
+<button id="next">next</button>
+
+<script>
+    let index = 0;
+    let img = $ ("#slider img");
+
+    $("#next").click(function(){
+        $(img[index]).fadeOut(300, function(){
+            index = (index + 1) % img.length;
+            $(img[index]).fadeIn(300);
+        });
+    });
+
+    $("#prev").click(function(){
+        $(img[index]).fadeOut(300, function(){
+            index = (index + 1) % img.length;
+            $(img[index]).fadeIn(300);
+        });
+    });
+</script>
+</body>
+</html>
